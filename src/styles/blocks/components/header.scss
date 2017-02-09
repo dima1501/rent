@@ -1,0 +1,91 @@
+.header {
+
+}
+
+.header__topline {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.header__logo {
+	margin-right: 25px;
+
+	img {
+		cursor: pointer;
+	}
+}
+
+.header__title {
+	max-width: 250px;
+	margin: auto auto auto 0;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #3c3c3c;
+	line-height: 1.6;
+}
+
+.header__phone {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	margin-right: 40px;
+}
+
+.header__subtitle {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #acacac;
+	margin-bottom: 5px;
+}
+
+.header__phone-large {
+	font-size: 24px;
+	color: #05abb6;
+}
+
+.header__callback {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.callback__title {
+	color: #3c3c3c;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.header__nav {
+	background-color: #f6f5f5;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	li {
+
+	}
+
+	a {
+		font-size: 13px;
+		text-transform: uppercase;
+		padding: 15px;
+		display: block;
+		color: #000;
+		transition: color .23s;
+
+		&:hover {
+			color: #05abb6;
+		}
+	}
+
+	.active {
+		color: #05abb6;
+	}
+}

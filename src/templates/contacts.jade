@@ -1,0 +1,24 @@
+extends layout.jade
+
+block title
+	title EVENT Tech
+
+block content
+	include blocks/header.jade
+
+	div.contacts
+		div#map.contacts__map
+		div.c-card
+			div.c-card__content
+			div.c-card__form
+				div.c-card__line
+					input(type="text" placeholder="Ваше имя")
+				div.c-card__line
+					input(type="text" placeholder="Телефон")
+				div.c-card__line
+					input(type="text" placeholder="Email")
+				a(href="#").button Отправить
+
+	include blocks/clients.jade
+
+	include blocks/footer.jade

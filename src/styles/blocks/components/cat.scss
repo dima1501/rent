@@ -1,0 +1,71 @@
+.cat {
+	padding: 50px 0;	
+}
+
+.cat__buttons {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 600px;
+	margin-bottom: 40px;
+
+	a {
+		border: 1px solid #05abb6;
+		border-radius: 3px;
+		margin-right: 6px;
+		padding: 4px 8px;
+		margin-bottom: 7px;
+		text-transform: uppercase;
+		color: #000;
+		font-size: 14px;
+		transition: background-color .23s, color .23s;
+
+		&.active,
+		&:hover {
+			background-color: #05abb6;
+			color: #fff;
+		}
+	}
+}
+
+.cat__row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.cat__card {
+	width: 23%;
+	margin-right: 17px;
+	margin-bottom: 20px;
+	min-width: 200px;
+	height: 260px;
+	border: 1px solid #fff;
+	box-shadow: 0 0 1px #000;
+	display: flex;
+	align-items: flex-end;
+	background-size: cover;
+	background-position: center;
+	transition: transform .3s;
+	border-radius: 2px;
+
+	&:hover {
+
+		transform: translateY(-8px);
+
+		.cat__name {
+			background-color: #05abb6;
+			padding: 25px 0;
+		}
+	}
+}
+
+.cat__name {
+	width: 100%;
+	padding: 17px 0;
+	text-align: center;
+	background-color: #2d2d2d;
+	color: #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+	transition: background-color .23s, color .23s, padding .23s, transform .23s;
+}
